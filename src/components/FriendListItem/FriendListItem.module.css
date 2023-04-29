@@ -1,0 +1,39 @@
+.item {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: var(--profile-bgc-color);
+    padding-left: var(--friendsList-gap);
+    text-align: center;
+    align-items: center;
+    background-color: var(--profile-bgc-color);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2),
+        0 1px 1px rgba(0, 0, 0, 0.14),
+        0 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 2%;
+}
+
+.avatar {
+    margin-left: var(--friendsList-gap);
+    border-radius: 20%;
+    padding: var(--friendsList-gap);
+    background-color: var(--avatar-bgc-color);
+}
+
+.name {
+    margin-left: var(--friendsList-gap);
+    font-size: 26px;
+    font-weight: 500;
+
+}
+
+.online {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.offline {
+    composes: online;
+    background-color: red;
+}
